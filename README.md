@@ -2,7 +2,7 @@
 
 This repository is released as part of our paper [Training Naturalized Semantic Parsers with Very Little Data](https://arxiv.org/abs/2204.14243)
 
-The repository contains `./data` a subfolder containing all the different splits of data we used in our joint training experiments, and the appendix of our publication `./appendix.pdf`.
+The repository contains [data](./data) a subfolder containing all the different splits of data we used in our joint training experiments, and the appendix of our publication [appendix.pdf](appendix.pdf).
 
 ## Getting Started
 
