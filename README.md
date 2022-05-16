@@ -8,17 +8,17 @@ The repository contains `./data` a subfolder containing all the different splits
 
 For the Pizza dataset and each of the eight domains of the Overnight dataset, there are five subfolders containing files for different tasks:
 
-annotated: Contains the annotated data for each split (n=16, 32, 48, or 200). The .src files contain utterances and .tgt files contain the canonical forms.
+**annotated**: Contains the annotated data for each split (n=16, 32, 48, or 200). The .src files contain utterances and .tgt files contain the canonical forms.
 
-unannotated: Contains the remaining data from the original dataset that didn't go into the respective annotated split. We assume this data has no annotations (ignore the .tgt files) and use it to create the mask prediction task.
+**unannotated**: Contains the remaining data from the original dataset that didn't go into the respective annotated split. We assume this data has no annotations (ignore the .tgt files) and use it to create the mask prediction task.
 
-maskpred: Contains the mask prediction data we create from unnannoted utterances (.src file in unannotated folder). We super sample 10x and mask spans of size equal to roughly 25% of the total sequence length. The .src files contain the masked utterances and .tgt files contain the original utterances.
+**maskpred**: Contains the mask prediction data we create from unnannoted utterances (.src file in unannotated folder). We super sample 10x and mask spans of size equal to roughly 25% of the total sequence length. The .src files contain the masked utterances and .tgt files contain the original utterances.
 
-denoising: Contains the denoising data we created by randomly generating lots of target canonical forms. The .tgt files contain the canonical forms and .src files contain noised versions of those examples (25% noise operations on non-content tokens). For Pizza, the target canonical forms are sampled from the synthetic training dataset and for Overnight, they are generated using SEMPRE.
+**denoising**: Contains the denoising data we created by randomly generating lots of target canonical forms. The .tgt files contain the canonical forms and .src files contain noised versions of those examples (25% noise operations on non-content tokens). For Pizza, the target canonical forms are sampled from the synthetic training dataset and for Overnight, they are generated using SEMPRE.
 
-jt: Contains the combined joint training data for each data split. The .src files are created by concatenating the respective .src files of from the annotated, maskpred, and denoising folders. The .tgt files are similarly created by concatenating the .tgt files from the annotated, maskpred, and denoising folders.
+**jt**: Contains the combined joint training data for each data split. The .src files are created by concatenating the respective .src files of from the annotated, maskpred, and denoising folders. The .tgt files are similarly created by concatenating the .tgt files from the annotated, maskpred, and denoising folders.
 
-original: Contains the original full training data files which includes the utterances, canonical forms, and exrs (executable representations/semantic parses). 
+**original**: Contains the original full training data files which includes the utterances, canonical forms, and exrs (executable representations/semantic parses). 
 
 
 NOTE: We haven't attached the self training and paraphrase augmentation data since that is produced after the first round of joint training. The model checkpoints created after training the JT models are used to tag the unannotated utterances and any new paraphrases produced from existing utterances.
