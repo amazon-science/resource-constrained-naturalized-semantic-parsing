@@ -1,11 +1,10 @@
 ## Resource Constrained Naturalized Semantic Parsing
 
-This folder contains:
-- data: a subfolder containing all the different splits of data we used in our joint training experiments
-- appendix: 
+This repository is released as part of our paper [Training Naturalized Semantic Parsers with Very Little Data](https://arxiv.org/abs/2204.14243)
+
+The repository contains `./data` a subfolder containing all the different splits of data we used in our joint training experiments, and the appendix of our publication `./appendix.pdf`.
 
 ## Getting Started
-
 
 For the Pizza dataset and each of the eight domains of the Overnight dataset, there are five subfolders containing files for different tasks:
 
@@ -29,7 +28,12 @@ If you use this dataset, please cite the following paper:
 
 ```bibtex
 [Rongali et al. 2022]
-
+@article{rongali2022training,
+  title={Training Naturalized Semantic Parsers with Very Little Data},
+  author={Rongali, Subendhu and Arkoudas, Konstantine and Rubino, Melanie and Hamza, Wael},
+  journal={arXiv preprint arXiv:2204.14243},
+  year={2022}
+}
 ```
 
 ## Security
