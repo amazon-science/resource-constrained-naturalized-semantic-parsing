@@ -38,16 +38,11 @@ If you use this dataset, please cite the following paper:
 
 as well as the original PIZZA dataset this work builds upon (see https://github.com/amazon-research/pizza-semantic-parsing-dataset)
 ```
-@misc{pizzaDataset,
-	author = {Konstantine Arkoudas and 
-	Nicolas Guenon des Mesnards and 
-	Melanie Rubino and 
-	Sandesh Swamy  and
-	Saarthak Khanna and
-	Weiqi Sun},
-	title = {Pizza: a task-oriented semantic parsing dataset},
-	url = {https://github.com/amazon-research/pizza-semantic-parsing-dataset},
-	year = {2021}
+@article{arkoudas2022pizza,
+  title={PIZZA: A new benchmark for complex end-to-end task-oriented parsing},
+  author={Arkoudas, Konstantine and Mesnards, Nicolas Guenon des and Rubino, Melanie and Swamy, Sandesh and Khanna, Saarthak and Sun, Weiqi and Haidar, Khan},
+  journal={arXiv preprint arXiv:2212.00265},
+  year={2022}
 }
 
 ```
